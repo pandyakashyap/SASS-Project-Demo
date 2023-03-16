@@ -1,0 +1,38 @@
+@import '../Variables/variable.scss';
+
+//is one type of function just call it 
+@mixin buttonstyle
+{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    color: orange;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mainpage
+{
+    font-size: 20px;
+    align-items: center;
+
+    h2
+    {
+        color: $headingcolor;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: $txt;
+    }
+
+    button
+    {
+        @include buttonstyle();
+    } 
+}
+
